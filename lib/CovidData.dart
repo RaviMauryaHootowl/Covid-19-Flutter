@@ -9,6 +9,7 @@ class CovidData{
   int recovered;
   Map histData;
 
+  // fetch th data
   void getData(String query) async{
     var url = 'https://corona.lmao.ninja/v2/countries/$query';
     Response response = await get(url);
