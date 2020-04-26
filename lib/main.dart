@@ -351,9 +351,17 @@ class _CovidHomeState extends State<CovidHome> {
     );
   }
 
-
   LineChartData mainDataNew() {
     return LineChartData(
+      lineTouchData: LineTouchData(
+        touchTooltipData: LineTouchTooltipData(
+          tooltipBgColor: Colors.white.withOpacity(0.5),
+          
+        ),
+        
+        touchCallback: (LineTouchResponse touchResponse) {},
+        handleBuiltInTouches: true,
+      ),
       gridData: FlGridData(
         show: false,
         drawVerticalLine: true,
@@ -472,6 +480,5 @@ class _CovidHomeState extends State<CovidHome> {
       ],
     );
   }
-
 }
 

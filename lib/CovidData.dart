@@ -10,7 +10,7 @@ class CovidData{
   Map histData;
 
   void getData(String query) async{
-    var url = 'https://corona.lmao.ninja/countries/$query';
+    var url = 'https://corona.lmao.ninja/v2/countries/$query';
     Response response = await get(url);
     Map data = jsonDecode(response.body);
 

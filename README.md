@@ -1,6 +1,6 @@
 # Covid-19 Tracker
 
-A Flutter app to track Covid-19 Spread.
+A Flutter app to track Covid-19 Spread.s
 
 ## Demo
 
